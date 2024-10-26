@@ -118,9 +118,9 @@ export default function ChatInterface() {
 
   return (
     <div
-      className={`flex flex-col min-h-screen p-0 sm:p-4 md:p-6 lg:p-8 ${nunito.className}`}
+      className={`flex flex-col h-screen p-0 sm:p-4 md:p-6 lg:p-8 ${nunito.className}`}
     >
-      <Card className="flex flex-col min-h-screen sm:min-h-2 md:min-h-3 lg:min-h-4 w-full sm:w-[400px] md:w-[600px] lg:w-[800px] mx-auto bg-white rounded-none sm:rounded-3xl shadow-lg overflow-hidden sm:border-8 sm:border-yellow-400">
+      <Card className="flex flex-col h-full w-full sm:w-[400px] md:w-[600px] lg:w-[800px] mx-auto bg-white rounded-none sm:rounded-3xl shadow-lg overflow-hidden sm:border-8 sm:border-yellow-400">
         <CardHeader className="bg-blue-500 py-4 sticky top-0 z-10">
           <CardTitle className="text-2xl sm:text-3xl font-black text-center text-white drop-shadow-md flex justify-between items-center">
             <div className="flex gap-2">
@@ -142,7 +142,7 @@ export default function ChatInterface() {
             />
           </CardTitle>
         </CardHeader>
-        <CardContent className="flex-grow overflow-hidden p-4">
+        <CardContent className="flex-grow overflow-hidden p-4 relative">
           <ScrollArea
             className="h-[calc(100vh-200px)] sm:h-[500px] w-full pr-4"
             ref={scrollAreaRef}
