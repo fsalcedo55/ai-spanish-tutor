@@ -144,7 +144,7 @@ export default function ChatInterface() {
         </CardHeader>
         <CardContent className="flex-grow overflow-hidden p-4 relative">
           <ScrollArea
-            className="h-[calc(100vh-200px)] sm:h-[500px] w-full pr-4 pb-6"
+            className="h-[calc(100vh-200px)] sm:h-[500px] w-full pr-4 pb-8"
             ref={scrollAreaRef}
           >
             {messages.map((message, index) => (
